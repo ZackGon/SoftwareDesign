@@ -1,0 +1,48 @@
+<html>
+   <head>
+      <title>TrafalgarPlaza</title>
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/base.css') }}">
+   </head>
+   <body>
+      <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
+      <div class="topnav">
+         <a href="/">Home</a>
+         <a href="">Team</a>
+         <a href="">Contact</a>
+         <a href="">About</a>
+         <div class="topnav-right">
+            <a href="login.html">Login</a>
+            <a class ="active" href="register.html">Register</a>
+         </div>
+      </div>
+      <form>
+         </br></br></br>
+         </br>
+         <div class = "registration">
+            <h1>Visitor Registration</h1>
+            </br>
+            <table>
+               <tr>
+                  <td>
+                     <label>First Name</label>
+                     <input type = "text" placeholder="Enter First Name" name = "first" required>
+                  </td>
+                  <td><label>Last Name</label>
+                     <input type = "text" placeholder="Enter Last Name" name = "last" required>
+                  </td>
+            </table>
+            <label>Mobile Number</label>
+            <input type = "text" placeholder="Enter Mobile Number" name = "mobile" required>
+            <label>Email</label>
+            <input type = "text" placeholder="Enter Email" name = "email" required>
+            <label>Password</label>
+            <input type = "password" placeholder="Enter Password" name = "password" required>
+            </br></br>
+            <a href = "/"><input class = "submit" type = "Submit" class = "btn btn-dark" value = "Register"></a>
+            </br>
+            <hr class ="line">
+            </hr>
+            <a href = "/login.html"><input class = "button" type = "button" class = "btn btn-dark" value = "Back to Login"></a>
+         </div>
+      </form>
+   </body>
